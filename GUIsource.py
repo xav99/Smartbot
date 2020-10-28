@@ -6,6 +6,7 @@ Smart bot
 import speech_recognition as sr
 import random
 import win32com.client as sapi
+import os
 from responces import Commands, Responses
 from datetime import datetime
 from operations import Operations
@@ -174,7 +175,6 @@ def launcher():
             text = rec.recognize_google(audio)
             text = text.lower()
             inConv = lambda x: [i for i in text.split() if i in x] # Returns any string matches in a list
-            #print("You said:", text)
             
             for i in text.split(): # checks for single keywords
                 if i in commands["angry"]: # checking for angry mood
@@ -266,7 +266,8 @@ def launcher():
                 elif i in commands["help"]:
                     botsResponse = random.choice(responses["helpResp"])
                     speak.Speak(botsResponse)
-                    botsResponse = responses["commandList"]
+                    #botsResponse = responses["commandList"]
+                    os.system("start operations\help.txt")
                     break
             
             #checks for multiple keywords

@@ -6,6 +6,7 @@ Smart bot
 import speech_recognition as sr
 import random
 import win32com.client as sapi
+import os
 from responces import Commands, Responses
 from datetime import datetime
 from operations import Operations
@@ -276,7 +277,8 @@ def sendCommand(command):
         elif i in commands["help"]:
             botsResponse = random.choice(responses["helpResp"])
             #speak.Speak(botsResponse)
-            botsResponse = responses["commandList"]
+            #botsResponse = responses["commandList"]
+            os.system("start operations\help.txt")
             return botsResponse
             break
     
