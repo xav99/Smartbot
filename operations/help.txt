@@ -1,0 +1,7 @@
+Try asking some things listed below:
+["Hi", "Hows it going", "Good Morning", "Good Afternoon", "Good Night",
+"When were you created", "Whats your name", "Whats your purpose",
+"Sing for me", "Tell me facts about turtles", "Get drunk", "Get sober",
+"Whats the weather", "Whats the time", "Whats the date",
+"Search [phrase]", "Calculate [equation]",
+"Hibernate computer", "Shutdown computer", "Cancel shutdown", "bye"]
